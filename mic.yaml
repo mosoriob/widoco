@@ -12,48 +12,51 @@ code_files:
     path: widoco-1.4.14-jar-with-dependencies.jar
     format: jar
 outputs:
-  provenance-en_ttl:
-    path: doc/provenance/provenance-en.ttl
-    format: ttl
-  marked_min_js:
-    path: doc/resources/marked.min.js
-    format: js
-  ontology_xml:
-    path: doc/ontology.xml
-    format: xml
-  index-en_html:
-    path: doc/index-en.html
-    format: html
   ontology_json:
     path: doc/ontology.json
     format: json
-  readme_md:
-    path: doc/readme.md
-    format: md
-  owl_css:
-    path: doc/resources/owl.css
-    format: css
-  ontology_ttl:
-    path: doc/ontology.ttl
-    format: ttl
-  rec_css:
-    path: doc/resources/rec.css
-    format: css
   ontology_nt:
     path: doc/ontology.nt
     format: nt
-  primer_css:
-    path: doc/resources/primer.css
-    format: css
-  provenance-en_html:
-    path: doc/provenance/provenance-en.html
+  index-en_html:
+    path: doc/index-en.html
     format: html
   extra_css:
     path: doc/resources/extra.css
     format: css
+  primer_css:
+    path: doc/resources/primer.css
+    format: css
+  ontology_xml:
+    path: doc/ontology.xml
+    format: xml
+  ontology_ttl:
+    path: doc/ontology.ttl
+    format: ttl
+  marked_min_js:
+    path: doc/resources/marked.min.js
+    format: js
+  owl_css:
+    path: doc/resources/owl.css
+    format: css
+  provenance-en_html:
+    path: doc/provenance/provenance-en.html
+    format: html
+  rec_css:
+    path: doc/resources/rec.css
+    format: css
+  provenance-en_ttl:
+    path: doc/provenance/provenance-en.ttl
+    format: ttl
+  readme_md:
+    path: doc/readme.md
+    format: md
   jquery_js:
     path: doc/resources/jquery.js
     format: js
+  1_txt:
+    path: test/b/1.txt
+    format: txt
 commands: '
 
 
@@ -64,5 +67,6 @@ commands: '
 
   popd'
 github_repo_url: https://github.com/sirspock/widoco.git
-version: 20.6.5
-docker_image: mosorio/widoco:20.6.5
+version: 20.6.2
+docker_image: mosorio/widoco:20.6.2
+mint_component_url: https://raw.githubusercontent.com/sirspock/widoco/master/mint_component.zip
