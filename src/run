@@ -1,0 +1,28 @@
+#!/bin/bash
+BASEDIR=$PWD
+. $BASEDIR/io.sh 2 0 14 "$@"
+CURDIR=`pwd`
+set -e
+## INPUTS VARIABLES
+doc_zip=${INPUTS1}
+alo_owl=${INPUTS2}
+
+
+## PARAMETERS VARIABLES
+
+
+set -xe
+
+####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
+
+
+pushd .
+echo $CURDIR
+java -jar widoco-1.4.14-jar-with-dependencies.jar -ontFile alo.owl -outFolder doc -rewriteAll -lang en
+popd
+
+
+####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
+set -e
+cd $BASEDIR
+. $BASEDIR/output.sh
