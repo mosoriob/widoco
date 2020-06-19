@@ -67,6 +67,6 @@ commands: '
 
   popd'
 github_repo_url: https://github.com/sirspock/widoco.git
-version: 20.6.2
-docker_image: mosorio/widoco:20.6.2
+version: 20.6.3
+docker_image: mosorio/widoco:20.6.3
 mint_component_url: https://raw.githubusercontent.com/sirspock/widoco/master/mint_component.zip
